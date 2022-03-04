@@ -14655,7 +14655,7 @@ def PackFormIntoFrame(form, containing_frame, toplevel_form):
                 if element.disabled_readonly_background_color is not None:
                     element.TKEntry.config(readonlybackground=element.disabled_readonly_background_color)
                 if element.disabled_readonly_text_color is not None:
-                    element.TKEntry.config(fg=element.disabled_readonly_text_color)
+                    element.TKEntry.config(disabledforeground=element.disabled_readonly_text_color)
 
                 element.Widget.config(highlightthickness=0)
                 # element.pack_keywords = {'side':tk.LEFT, 'padx':elementpad[0], 'pady':elementpad[1], 'expand':False, 'fill':tk.NONE }
